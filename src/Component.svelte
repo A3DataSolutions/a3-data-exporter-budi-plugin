@@ -20,7 +20,9 @@
 
   function cleanDpRows() {
     let cleanedDpRows = [];
-    if (columns.length > 0) {
+    console.log(columns)
+    if (columns??[].length > 0) {
+      console.log('still got here')
       dpRows.forEach((row) => {
         const columnNameArray = columns.map(item => item.name);
         const extractedProps = getDynamicProps(row, columnNameArray);
@@ -28,8 +30,9 @@
       });
       return cleanedDpRows
     } else {
-      cleanedDpRows = dpRows.map((x) => x);;
-      return cleanDpRows
+
+      // cleanedDpRows = dpRows.map((x) => x);;
+      return dpRows
     }
   }
 
@@ -46,7 +49,7 @@
 </script>
 
 <div use:styleable={$component.styles}>
-  <div on:keypress={console.log("key  pressed")} on:click={export_data}>
+  <button style="background: transparent; border: none !important; font-size:0;"on:click={export_data}>
     <slot />
-  </div>
+  </button>
 </div>

@@ -4,6 +4,11 @@ This is a readme for your new Budibase plugin.
 # Description
 A simple component made by A3 Data Solutions which exports data from a data provider as CSV or Excel
 
+1) Add a data provider
+2) Add a filename
+3) Nest a button component
+4) Optional - Choose columns
+
 Find out more about [Budibase](https://github.com/Budibase/budibase).
 
 ## Instructions
