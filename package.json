@@ -1,6 +1,6 @@
 {
   "name": "a3-data-exporter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple component made by A3 Data Solutions which exports data from a data provider as CSV or Excel",
   "license": "MIT",
   "svelte": "index.js",

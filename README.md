@@ -6,8 +6,8 @@ A simple component made by A3 Data Solutions which exports data from a data prov
 
 1) Add a data provider
 2) Add a filename
-3) Nest a button component
-4) Optional - Choose columns
+3) Nest a button component or any other component which you want to have an On Click action
+4) Optional - Choose columns (this will only export the selected columns)
 
 Find out more about [Budibase](https://github.com/Budibase/budibase).
 
