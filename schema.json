@@ -1,0 +1,32 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "a3-data-exporter",
+    "friendlyName": "a3-data-exporter",
+    "description": "A simple component made by A3 Data Solutions which exports data from a data provider as CSV or Excel",
+    "hasChildren": true,
+    "icon": "Text",
+    "settings": [
+      {
+        "type": "dataProvider",
+        "label": "Data provider",
+        "key": "dataProvider",
+        "required": true
+      },
+      {
+        "type": "text",
+        "label": "Output Filename",
+        "key": "filename",
+        "required": true,
+        "dependsOn": "dataProvider"
+      },
+      {
+        "type": "columns",
+        "label": "Columns",
+        "key": "columns",
+        "dependsOn": "dataProvider"
+      }
+    ]
+  }
+}
